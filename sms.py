@@ -4,10 +4,9 @@ URL = 'https://www.way2sms.com/api/v1/sendCampaign'
 apiKey ='RV4QLRFSYMTOS4EIXCY0RSGPON8055IO'
 secretKey = '9HJA45PW4D6QRU38'
 useType = 'stage'
-phoneNo = '+918789238416'
+phoneNo = input("Enter Mobile No :-")
 senderId = '9709034301'
-textMessage = "Hi Good Morning everyone, This is a test message using Python\nSaurav\n(Programer/Coder)"
-
+textMessage = input("Message")
 # get request
 def sendPostRequest(reqUrl, apiKey, secretKey, useType, phoneNo, senderId, textMessage):
   req_params = {
